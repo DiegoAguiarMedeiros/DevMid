@@ -38,4 +38,11 @@ describe("Prime Numbers", () => {
   test("should return false to number 1", () => {
     expect(isPrimeNumber(1)).toBe(false);
   });
+
+  test("should return false to number 4,6,8,9", () => {
+    expect(isPrimeNumber(4)).toBe(false);
+    expect(isPrimeNumber(6)).toBe(false);
+    expect(isPrimeNumber(6)).toBe(false);
+    expect(isPrimeNumber(9)).toBe(false);
+  });
 });
