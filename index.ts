@@ -78,7 +78,7 @@ const vowelCounter = (text: string): number => {
 };
 
 const gradeAverage = (a: number, b: number, c: number): number => {
-  return (a + b + c) / 3;
+  return Number(((a + b + c) / 3).toFixed(2));
 };
 
 export {
