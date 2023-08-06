@@ -10,6 +10,7 @@
     "calcFactorial": "tsc && node ./dist/calcFactorial.js",
     "firstTenPrimeNumbers": "tsc && node ./dist/firstTenPrimeNumbers.js",
     "isPalindrome": "tsc && node ./dist/isPalindrome.js",
+    "table": "tsc && node ./dist/table.js",
     "test": "jest"
   },
   "author": "Diego Aguiar Medeiros",
