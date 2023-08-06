@@ -40,10 +40,10 @@ const firstTenPrimeNumbers = (): number[] => {
 const factorial = (a: number): number => {
   let returnFactorial: number = 1;
   let count: number = a;
-  do {
+  while (count >= 1) {
     returnFactorial = returnFactorial * count;
     count--;
-  } while (count >= 1);
+  }
   return returnFactorial;
 };
 

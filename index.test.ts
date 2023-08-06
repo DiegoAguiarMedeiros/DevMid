@@ -79,4 +79,10 @@ describe("Factorial", () => {
   test("should return 120 factorial of 5", () => {
     expect(factorial(5)).toBe(120);
   });
+  test("should return 3628800  factorial of 10", () => {
+    expect(factorial(10)).toBe(3628800);
+  });
+  test("should return 1  factorial of 0", () => {
+    expect(factorial(0)).toBe(1);
+  });
 });
