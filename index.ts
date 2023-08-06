@@ -13,7 +13,7 @@ const calculator = (
 };
 
 const isPrimeNumber = (a: number) => {
-  if (a === 1) {
+  if (a <= 1) {
     return false;
   }
   for (let i = 2; i <= Math.sqrt(a); i++) {
@@ -21,6 +21,7 @@ const isPrimeNumber = (a: number) => {
       return false;
     }
   }
+  return true;
 };
 
 export { calculator, isPrimeNumber };

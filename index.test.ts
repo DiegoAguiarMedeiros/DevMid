@@ -45,4 +45,17 @@ describe("Prime Numbers", () => {
     expect(isPrimeNumber(6)).toBe(false);
     expect(isPrimeNumber(9)).toBe(false);
   });
+  test("should return false to number 2,3,5,7", () => {
+    expect(isPrimeNumber(2)).toBe(true);
+    expect(isPrimeNumber(3)).toBe(true);
+    expect(isPrimeNumber(5)).toBe(true);
+    expect(isPrimeNumber(7)).toBe(true);
+  });
+
+  test("should return false for negative numbers", () => {
+    expect(isPrimeNumber(-2)).toBe(false);
+    expect(isPrimeNumber(-3)).toBe(false);
+    expect(isPrimeNumber(-7)).toBe(false);
+    // Add more test cases for other negative numbers
+  });
 });
