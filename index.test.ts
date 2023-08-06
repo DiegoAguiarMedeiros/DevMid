@@ -76,7 +76,7 @@ describe("first 10 prime numbers", () => {
   });
 });
 describe("Factorial", () => {
-  test("should import Factorial", () => {
-    factorial();
+  test("should return 120 factorial of 5", () => {
+    expect(factorial(5)).toBe(120);
   });
 });

@@ -37,6 +37,14 @@ const firstTenPrimeNumbers = (): number[] => {
   return returnFirstTenPrimeNumbers;
 };
 
-const factorial = () => {};
+const factorial = (a: number): number => {
+  let returnFactorial: number = 1;
+  let count: number = a;
+  do {
+    returnFactorial = returnFactorial * count;
+    count--;
+  } while (count >= 1);
+  return returnFactorial;
+};
 
 export { calculator, isPrimeNumber, firstTenPrimeNumbers, factorial };
