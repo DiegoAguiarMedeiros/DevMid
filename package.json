@@ -11,6 +11,7 @@
     "firstTenPrimeNumbers": "tsc && node ./dist/firstTenPrimeNumbers.js",
     "isPalindrome": "tsc && node ./dist/isPalindrome.js",
     "table": "tsc && node ./dist/table.js",
+    "vowelCounter": "tsc && node ./dist/vowelCounter.js",
     "test": "jest"
   },
   "author": "Diego Aguiar Medeiros",

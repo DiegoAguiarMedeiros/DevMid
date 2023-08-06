@@ -16,7 +16,7 @@ function askForASentence(): Promise<string> {
 }
 
 async function main() {
-  console.log("Welcome to the factorial calculator!");
+  console.log("Welcome to the Palindrome check!");
 
   try {
     const text = await askForASentence();
