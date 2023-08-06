@@ -27,6 +27,14 @@ const isPrimeNumber = (a: number) => {
   return true;
 };
 
-const firstTenPrimeNumbers = () => {};
+const firstTenPrimeNumbers = (): number[] => {
+  const returnFirstTenPrimeNumbers: number[] = [];
+  let number = 0;
+  do {
+    if (isPrimeNumber(number)) returnFirstTenPrimeNumbers.push(number);
+    number++;
+  } while (returnFirstTenPrimeNumbers.length < 10);
+  return returnFirstTenPrimeNumbers;
+};
 
 export { calculator, isPrimeNumber, firstTenPrimeNumbers };
