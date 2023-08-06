@@ -3,7 +3,7 @@ const calculator = (a: number, b: number, operator: "+" | "-" | "*" | "/") => {
     "+": a + b,
     "-": a - b,
     "/": a + b,
-    "*": a + b,
+    "*": a * b,
   };
   return operation[operator];
 };
