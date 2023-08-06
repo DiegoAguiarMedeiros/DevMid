@@ -5,6 +5,7 @@ import {
   factorial,
   isPalindrome,
   vowelCounter,
+  gradeAverage
 } from "./index";
 
 describe("calculator function", () => {
@@ -144,5 +145,10 @@ describe("Vowel Counter", () => {
     expect(vowelCounter("12345")).toBe(0);
     expect(vowelCounter("@#$%^&*")).toBe(0);
     expect(vowelCounter("Hello, 123 World!")).toBe(3);
+  });
+});
+describe("Grade Average", () => {
+  test("should import gradeAverage", () => {
+    gradeAverage();
   });
 });

@@ -77,6 +77,8 @@ const vowelCounter = (text: string): number => {
   return count;
 };
 
+const gradeAverage = () => {};
+
 export {
   calculator,
   isPrimeNumber,
@@ -84,4 +86,5 @@ export {
   factorial,
   isPalindrome,
   vowelCounter,
+  gradeAverage,
 };
