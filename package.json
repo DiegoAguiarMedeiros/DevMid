@@ -13,6 +13,7 @@
     "table": "tsc && node ./dist/table.js",
     "vowelCounter": "tsc && node ./dist/vowelCounter.js",
     "gradeAverage": "tsc && node ./dist/gradeAverage.js",
+    "interestCalculation": "tsc && node ./dist/interestCalculation.js",
     "test": "jest"
   },
   "author": "Diego Aguiar Medeiros",
