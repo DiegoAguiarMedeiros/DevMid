@@ -8,6 +8,7 @@
     "start": "node index.ts",
     "start:dev": "node index.ts --watch",
     "calcFactorial": "tsc && node ./dist/calcFactorial.js",
+    "firstTenPrimeNumbers": "tsc && node ./dist/firstTenPrimeNumbers.js",
     "test": "jest"
   },
   "author": "Diego Aguiar Medeiros",
