@@ -13,6 +13,9 @@ const calculator = (
 };
 
 const isPrimeNumber = (a: number) => {
+  if (!Number.isInteger(a)) {
+    return false;
+  }
   if (a <= 1) {
     return false;
   }

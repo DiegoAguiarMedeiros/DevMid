@@ -56,6 +56,10 @@ describe("Prime Numbers", () => {
     expect(isPrimeNumber(-2)).toBe(false);
     expect(isPrimeNumber(-3)).toBe(false);
     expect(isPrimeNumber(-7)).toBe(false);
-    // Add more test cases for other negative numbers
+  });
+
+  test('should return false for decimal numbers', () => {
+    expect(isPrimeNumber(3.14)).toBe(false);
+    expect(isPrimeNumber(1.5)).toBe(false);
   });
 });
