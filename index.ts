@@ -12,4 +12,6 @@ const calculator = (
   return operation[operator];
 };
 
-export { calculator };
+const isPrimeNumber = () => {};
+
+export { calculator, isPrimeNumber };
