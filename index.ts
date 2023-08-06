@@ -88,6 +88,10 @@ const interestCalculation = (
   if (investmentTimeMonths === 0) {
     return 0;
   }
+  const interestRateDecimal = interestRate / 100;
+  const finalValue =
+    initialCapital * Math.pow(1 + interestRateDecimal, investmentTimeMonths);
+  return Math.round(finalValue * 100) / 100;
 };
 
 export {

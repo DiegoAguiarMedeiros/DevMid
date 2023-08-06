@@ -176,4 +176,42 @@ describe("Interest Calculation", () => {
       interestCalculation(initialCapital, interestRate, investmentTimeMonths)
     ).toBe(0);
   });
+
+  test("should return the initial capital when the investment time is 1", () => {
+    const initialCapital = 1000;
+    const interestRate = 5;
+    const investmentTimeMonths = 1;
+    expect(
+      interestCalculation(initialCapital, interestRate, investmentTimeMonths)
+    ).toBe(1050);
+  });
+
+  test("should calculate the final value correctly for a given initial capital, interest rate, and investment time", () => {
+    // Test case 1
+    const initialCapital1 = 1000;
+    const interestRate1 = 5;
+    const investmentTimeMonths1 = 12;
+    const expectedFinalValue1 = 1795.86;
+    expect(
+      interestCalculation(initialCapital1, interestRate1, investmentTimeMonths1)
+    ).toBeCloseTo(expectedFinalValue1, 2);
+
+    // Test case 2
+    const initialCapital2 = 5000;
+    const interestRate2 = 3.5;
+    const investmentTimeMonths2 = 24;
+    const expectedFinalValue2 = 11416.64;
+    expect(
+      interestCalculation(initialCapital2, interestRate2, investmentTimeMonths2)
+    ).toBeCloseTo(expectedFinalValue2, 2);
+
+    // Test case 3
+    const initialCapital3 = 200;
+    const interestRate3 = 10;
+    const investmentTimeMonths3 = 6;
+    const expectedFinalValue3 = 354.31;
+    expect(
+      interestCalculation(initialCapital3, interestRate3, investmentTimeMonths3)
+    ).toBeCloseTo(expectedFinalValue3, 2);
+  });
 });
