@@ -3,6 +3,7 @@ import {
   isPrimeNumber,
   firstTenPrimeNumbers,
   factorial,
+  isPalindrome,
 } from "./index";
 
 describe("calculator function", () => {
@@ -84,5 +85,30 @@ describe("Factorial", () => {
   });
   test("should return 1  factorial of 0", () => {
     expect(factorial(0)).toBe(1);
+  });
+});
+
+describe("Palindrome", () => {
+  test("should accept a string as parameter", () => {
+    isPalindrome("");
+  });
+
+  test("should return false if '' is passed as parameter", () => {
+    expect(isPalindrome("")).toBe(false);
+  });
+
+  test("should return true if 'Amor a Roma' is passed as parameter", () => {
+    expect(isPalindrome("Amor a Roma")).toBe(true);
+  });
+
+  test("Check if 'hello' is not a palindrome", () => {
+    expect(isPalindrome("hello")).toBe(false);
+  });
+
+  test("Check if 'A man, a plan, a canal, Panama!' is a palindrome", () => {
+    expect(isPalindrome("A man a plan a canal Panama")).toBe(true);
+  });
+  test("Check if 'A man, a plan, a canal, Panama!' is a palindrome", () => {
+    expect(isPalindrome("A man, a plan, a canal, Panama!")).toBe(true);
   });
 });

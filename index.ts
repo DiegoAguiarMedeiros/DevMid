@@ -47,4 +47,29 @@ const factorial = (a: number): number => {
   return returnFactorial;
 };
 
-export { calculator, isPrimeNumber, firstTenPrimeNumbers, factorial };
+const isPalindrome = (text: string): boolean => {
+  if (text === "") return false;
+  let reverseText = text.split("").reverse();
+
+  let textLowerCaseTrimmed = text
+    .replaceAll(" ", "")
+    .replace(/[^a-zA-Z]/g, "")
+    .toLowerCase();
+  let reverseTextLowerCaseTrimmed = reverseText
+    .join("")
+    .replaceAll(" ", "")
+    .replace(/[^a-zA-Z]/g, "")
+    .toLowerCase();
+
+  return textLowerCaseTrimmed === reverseTextLowerCaseTrimmed;
+};
+
+export default isPalindrome;
+
+export {
+  calculator,
+  isPrimeNumber,
+  firstTenPrimeNumbers,
+  factorial,
+  isPalindrome,
+};
