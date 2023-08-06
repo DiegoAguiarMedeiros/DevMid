@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "start": "node index.ts",
     "start:dev": "node index.ts --watch",
+    "calcFactorial": "tsc && node ./dist/calcFactorial.js",
     "test": "jest"
   },
   "author": "Diego Aguiar Medeiros",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-typescript": "^7.22.5",
+    "@types/node": "^20.4.8",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "eslint": "^8.46.0",
     "eslint-config-standard-with-typescript": "^37.0.0",
@@ -20,6 +23,7 @@
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.6.2",
+    "readline-sync": "^1.4.10",
     "typescript": "^5.1.6"
   }
 }
