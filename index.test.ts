@@ -1,4 +1,9 @@
-import { calculator, isPrimeNumber, firstTenPrimeNumbers } from "./index";
+import {
+  calculator,
+  isPrimeNumber,
+  firstTenPrimeNumbers,
+  factorial,
+} from "./index";
 
 describe("calculator function", () => {
   test("should accept 3 parrams", () => {
@@ -68,5 +73,10 @@ describe("first 10 prime numbers", () => {
   test("should return first 10 prime numbers", () => {
     const firstTenPrime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
     expect(firstTenPrimeNumbers()).toStrictEqual(firstTenPrime);
+  });
+});
+describe("Factorial", () => {
+  test("should import Factorial", () => {
+    factorial();
   });
 });

@@ -37,4 +37,6 @@ const firstTenPrimeNumbers = (): number[] => {
   return returnFirstTenPrimeNumbers;
 };
 
-export { calculator, isPrimeNumber, firstTenPrimeNumbers };
+const factorial = () => {};
+
+export { calculator, isPrimeNumber, firstTenPrimeNumbers, factorial };
