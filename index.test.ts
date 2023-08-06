@@ -5,7 +5,7 @@ import {
   factorial,
   isPalindrome,
   vowelCounter,
-  gradeAverage
+  gradeAverage,
 } from "./index";
 
 describe("calculator function", () => {
@@ -148,7 +148,7 @@ describe("Vowel Counter", () => {
   });
 });
 describe("Grade Average", () => {
-  test("should import gradeAverage", () => {
-    gradeAverage();
+  test("should return 2 on 2 2 2", () => {
+    expect(gradeAverage(2, 2, 2)).toBe(2);
   });
 });

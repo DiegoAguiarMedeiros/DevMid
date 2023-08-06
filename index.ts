@@ -77,7 +77,9 @@ const vowelCounter = (text: string): number => {
   return count;
 };
 
-const gradeAverage = () => {};
+const gradeAverage = (a: number, b: number, c: number): number => {
+  return (a + b + c) / 3;
+};
 
 export {
   calculator,
