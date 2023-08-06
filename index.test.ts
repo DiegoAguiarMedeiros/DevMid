@@ -6,6 +6,7 @@ import {
   isPalindrome,
   vowelCounter,
   gradeAverage,
+  interestCalculation,
 } from "./index";
 
 describe("calculator function", () => {
@@ -148,7 +149,6 @@ describe("Vowel Counter", () => {
   });
 });
 describe("Grade Average", () => {
-
   test("should return 2 on 2 2 2", () => {
     expect(gradeAverage(2, 2, 2)).toBe(2);
   });
@@ -158,11 +158,22 @@ describe("Grade Average", () => {
   });
 
   test("should return the correct average for positive grades", () => {
-    expect(gradeAverage(85, 90, 78)).toBe(84.33); 
+    expect(gradeAverage(85, 90, 78)).toBe(84.33);
     expect(gradeAverage(100, 95, 90)).toBe(95);
   });
 
-  test('should handle negative grades', () => {
-    expect(gradeAverage(-80, -90, -85)).toBe(-85); // (-80 + -90 + -85) / 3 = -85
+  test("should handle negative grades", () => {
+    expect(gradeAverage(-80, -90, -85)).toBe(-85);
+  });
+});
+
+describe("Interest Calculation", () => {
+  test("should return 0 when the investment time is 0", () => {
+    const initialCapital = 1000;
+    const interestRate = 5;
+    const investmentTimeMonths = 0;
+    expect(
+      interestCalculation(initialCapital, interestRate, investmentTimeMonths)
+    ).toBe(0);
   });
 });

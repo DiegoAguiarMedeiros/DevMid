@@ -80,6 +80,15 @@ const vowelCounter = (text: string): number => {
 const gradeAverage = (a: number, b: number, c: number): number => {
   return Number(((a + b + c) / 3).toFixed(2));
 };
+const interestCalculation = (
+  initialCapital: number,
+  interestRate: number,
+  investmentTimeMonths: number
+): number => {
+  if (investmentTimeMonths === 0) {
+    return 0;
+  }
+};
 
 export {
   calculator,
@@ -89,4 +98,5 @@ export {
   isPalindrome,
   vowelCounter,
   gradeAverage,
+  interestCalculation,
 };
