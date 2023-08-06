@@ -27,4 +27,6 @@ const isPrimeNumber = (a: number) => {
   return true;
 };
 
-export { calculator, isPrimeNumber };
+const firstTenPrimeNumbers = () => {};
+
+export { calculator, isPrimeNumber, firstTenPrimeNumbers };

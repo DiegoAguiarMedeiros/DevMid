@@ -1,4 +1,4 @@
-import { calculator, isPrimeNumber } from "./index";
+import { calculator, isPrimeNumber, firstTenPrimeNumbers } from "./index";
 
 describe("calculator function", () => {
   test("should accept 3 parrams", () => {
@@ -58,8 +58,14 @@ describe("Prime Numbers", () => {
     expect(isPrimeNumber(-7)).toBe(false);
   });
 
-  test('should return false for decimal numbers', () => {
+  test("should return false for decimal numbers", () => {
     expect(isPrimeNumber(3.14)).toBe(false);
     expect(isPrimeNumber(1.5)).toBe(false);
+  });
+});
+
+describe("first 10 prime numbers", () => {
+  test("should import firstTenPrimeNumbers", () => {
+    firstTenPrimeNumbers();
   });
 });
