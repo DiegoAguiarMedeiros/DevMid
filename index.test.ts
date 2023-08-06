@@ -15,3 +15,7 @@ test("should return 0 on 1 , 1 , -", () => {
 test("should return 8 on 4 , 2 , *", () => {
   expect(calculator(4, 2, "*")).toBe(8);
 });
+
+test("should return 2 on 4 , 2 , /", () => {
+  expect(calculator(4, 2, "/")).toBe(2);
+});
