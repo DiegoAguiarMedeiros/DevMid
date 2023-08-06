@@ -115,7 +115,7 @@ describe("Palindrome", () => {
 });
 
 describe("Vowel Counter", () => {
-  test("should import vowelCounter", () => {
-    vowelCounter();
+  test("should return 1 from ab", () => {
+    expect(vowelCounter("ab")).toBe(1);
   });
 });

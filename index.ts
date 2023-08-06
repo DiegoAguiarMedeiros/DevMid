@@ -64,7 +64,18 @@ const isPalindrome = (text: string): boolean => {
   return textLowerCaseTrimmed === reverseTextLowerCaseTrimmed;
 };
 
-const vowelCounter = () => {};
+const vowelCounter = (text: string): number => {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+
+  for (let char of text) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+};
 
 export {
   calculator,
