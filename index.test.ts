@@ -118,4 +118,31 @@ describe("Vowel Counter", () => {
   test("should return 1 from ab", () => {
     expect(vowelCounter("ab")).toBe(1);
   });
+
+  test("should return 3 from ab", () => {
+    expect(vowelCounter("ababa")).toBe(3);
+  });
+
+  test("should return 0 for an empty string", () => {
+    expect(vowelCounter("")).toBe(0);
+  });
+
+  test("should return 0 for a string wtesth no vowels", () => {
+    expect(vowelCounter("hll, wrld!")).toBe(0);
+  });
+
+  test("should return the correct number of vowels for a string wtesth vowels", () => {
+    expect(vowelCounter("Hello, World!")).toBe(3);
+    expect(vowelCounter("Programming is fun")).toBe(5);
+  });
+
+  test("should count both lowercase and uppercase vowels", () => {
+    expect(vowelCounter("AeIoU")).toBe(5);
+  });
+
+  test("should ignore non-letter characters", () => {
+    expect(vowelCounter("12345")).toBe(0);
+    expect(vowelCounter("@#$%^&*")).toBe(0);
+    expect(vowelCounter("Hello, 123 World!")).toBe(3);
+  });
 });
