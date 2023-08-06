@@ -19,3 +19,7 @@ test("should return 8 on 4 , 2 , *", () => {
 test("should return 2 on 4 , 2 , /", () => {
   expect(calculator(4, 2, "/")).toBe(2);
 });
+
+test("should return cannot divide by zero on 4 , 0 , /", () => {
+  expect(calculator(4, 0, "/")).toBe("cannot divide by zero");
+});
