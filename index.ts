@@ -12,6 +12,10 @@ const calculator = (
   return operation[operator];
 };
 
-const isPrimeNumber = () => {};
+const isPrimeNumber = (a: number) => {
+  if (a === 1) {
+    return false;
+  }
+};
 
 export { calculator, isPrimeNumber };

@@ -35,7 +35,7 @@ describe("calculator function", () => {
 });
 
 describe("Prime Numbers", () => {
-  test("should import isPrimeNumber", () => {
-    isPrimeNumber();
+  test("should return false to number 1", () => {
+    expect(isPrimeNumber(1)).toBe(false);
   });
 });
