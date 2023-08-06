@@ -4,6 +4,7 @@ import {
   firstTenPrimeNumbers,
   factorial,
   isPalindrome,
+  vowelCounter,
 } from "./index";
 
 describe("calculator function", () => {
@@ -110,5 +111,11 @@ describe("Palindrome", () => {
   });
   test("Check if 'A man, a plan, a canal, Panama!' is a palindrome", () => {
     expect(isPalindrome("A man, a plan, a canal, Panama!")).toBe(true);
+  });
+});
+
+describe("Vowel Counter", () => {
+  test("should import vowelCounter", () => {
+    vowelCounter();
   });
 });

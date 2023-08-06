@@ -64,7 +64,7 @@ const isPalindrome = (text: string): boolean => {
   return textLowerCaseTrimmed === reverseTextLowerCaseTrimmed;
 };
 
-export default isPalindrome;
+const vowelCounter = () => {};
 
 export {
   calculator,
@@ -72,4 +72,5 @@ export {
   firstTenPrimeNumbers,
   factorial,
   isPalindrome,
+  vowelCounter,
 };
