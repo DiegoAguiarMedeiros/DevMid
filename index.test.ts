@@ -152,7 +152,7 @@ describe("Grade Average", () => {
   test("should return 2 on 2 2 2", () => {
     expect(gradeAverage(2, 2, 2)).toBe(2);
   });
-  
+
   test("should return 0 for all grades as 0", () => {
     expect(gradeAverage(0, 0, 0)).toBe(0);
   });
@@ -160,5 +160,9 @@ describe("Grade Average", () => {
   test("should return the correct average for positive grades", () => {
     expect(gradeAverage(85, 90, 78)).toBe(84.33); 
     expect(gradeAverage(100, 95, 90)).toBe(95);
+  });
+
+  test('should handle negative grades', () => {
+    expect(gradeAverage(-80, -90, -85)).toBe(-85); // (-80 + -90 + -85) / 3 = -85
   });
 });
